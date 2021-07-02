@@ -1,0 +1,19 @@
+[package]
+name = "sht20"
+version = "0.2.1"
+edition = "2018"
+authors = ["xymist <james@jamieduerden.me>"]
+categories = ["embedded", "hardware-support"]
+keywords = ["xtensa", "hal", "esp", "esp32", "esp8266", "idf"]
+description = "A driver for the SHT20 Humidity and Temperature sensor, build on esp-idf-hal"
+repository = "https://github.com/xymist/sht20"
+license = "MIT"
+
+[package.metadata.docs.rs]
+default-target = "x86_64-unknown-linux-gnu"
+
+[dependencies]
+anyhow = "1.0.41"
+log = "0.4.14"
+esp-idf-hal = {version = "0.12", path = "../esp-idf-hal"}
+esp-idf-sys = {version = "0.12", git = "https://github.com/ivmarkov/esp-idf-sys.git"}
